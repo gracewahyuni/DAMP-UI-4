@@ -16,12 +16,12 @@ body {
     width: 100%;
 }
 
-.nav-menu {
+/* .nav-menu {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-}
+} */
 
 .sidebar {
     width: 15%;
@@ -79,7 +79,7 @@ body {
 .sidebar ul li {
     padding: 10px;
     margin: 5px 0;
-    background: #8EBBFF;;
+    background: #8EBBFF;
     
     cursor: pointer;
     transition: background 0.3s;
@@ -88,6 +88,7 @@ body {
 .sidebar ul li a {
     color: #312c51;
 }
+
 .sidebar ul li:hover {
     background: #a8b5ac;
 }
@@ -111,22 +112,63 @@ body {
 }
 
 .header-container {
+    display: flex;
+    justify-content: space-between;
     background: #291e6d;
     padding: 35px;
     font-weight: bold;
-    
+    color:beige;  
 }
 
-.header-container .logo {
-    color:beige;
-    font-size: 24px;
+.logo {
+    font-size: 40px;
     font-weight: bold;
+}
+
+.akun{
+    display: flex;
+    justify-content: flex-end;
+    /* padding: 20px; */
+    font-size: 30px;
+    font-weight: bold;
+    padding: 13px 0 0 0;
+}
+
+#akunBtn {
+    background-color: #8EBBFF;
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+#akunBtn:hover {
+    background-color: #a8b5ac;
+    border-radius: 8px;
+}
+
+.nav-menu {
+    color: white;
+    font-size: 22px;
+    position: absolute;
+    right: 30%;
+}
+
+.nav-menu ul {
+    list-style: none; /* Hilangkan bullet list */
+    display: flex; /* Membuat daftar menu sejajar */
+    gap: 60px; /* Beri jarak antar menu */
+    margin: 0;
+    padding: 15px 0 0 0;
 }
 
 .info {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
     margin: 20px 0;
 }
 
@@ -175,3 +217,19 @@ width: 120px;
     font-weight: bold;
 }
 
+.no-border-table {
+    border: none;  /* Menghilangkan border tabel */
+    background-color: #8c95b9; /* Warna background yang sama dengan halaman */
+    width: 50%;/* Agar tabel tetap memenuhi lebar kontainer */
+}
+
+.no-border-table td {
+    border: none; /* Menghilangkan border pada setiap cell */
+    padding: 10px; /* Memberi jarak antara teks dan sisi cell */
+    color: black; /* Warna teks putih */
+    line-height: 1; /* Mengatur jarak antar baris teks dalam cell */
+}
+
+.no-border-table td:first-child {
+    font-weight: bold; /* Memberikan penekanan pada label seperti NAMA, NIM, dll */
+}
