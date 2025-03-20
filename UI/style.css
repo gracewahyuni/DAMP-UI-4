@@ -7,7 +7,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background-color: #8c95b9;
+    background-color: #ffff;
 }
 
 .container {
@@ -16,16 +16,9 @@ body {
     width: 100%;
 }
 
-/* .nav-menu {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-} */
-
 .sidebar {
     width: 15%;
-    background: #291e6d;
+    background: #122b48;
     padding:10px;
 }
 
@@ -108,19 +101,20 @@ body {
 }
 
 .content p{
-    color: beige;
+    color: rgb(217, 233, 239);
 }
 
 .header-container {
     display: flex;
     justify-content: space-between;
-    background: #291e6d;
+    background: #122b48;
     padding: 35px;
     font-weight: bold;
     color:beige;  
 }
 
 .logo {
+    color: #ffb300;
     font-size: 40px;
     font-weight: bold;
 }
@@ -128,17 +122,15 @@ body {
 .akun{
     display: flex;
     justify-content: flex-end;
-    /* padding: 20px; */
-    font-size: 30px;
     font-weight: bold;
     padding: 13px 0 0 0;
 }
 
 #akunBtn {
-    background-color: #8EBBFF;
-    color: white;
-    font-size: 30px;
-    padding: 10px;
+    background-color: #ffb300;
+    color: rgb(0, 0, 0);
+    font-size: x-large;
+    padding: 8px;
     border: none;
     cursor: pointer;
     font-weight: bold;
@@ -163,6 +155,11 @@ body {
     gap: 60px; /* Beri jarak antar menu */
     margin: 0;
     padding: 15px 0 0 0;
+    
+}
+
+.nav-menu a {
+    color : #8EBBFF;
 }
 
 .info {
@@ -171,17 +168,6 @@ body {
     gap: 40px;
     margin: 20px 0;
 }
-
-/* .profile {
-    width: 50px;
-    height: 50px;
-    background: #c5c5d2;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-} */
 
 .profile-pic{
 width: 120px;
@@ -219,7 +205,7 @@ width: 120px;
 
 .no-border-table {
     border: none;  /* Menghilangkan border tabel */
-    background-color: #8c95b9; /* Warna background yang sama dengan halaman */
+    background-color: #ffff; /* Warna background yang sama dengan halaman */
     width: 50%;/* Agar tabel tetap memenuhi lebar kontainer */
 }
 
