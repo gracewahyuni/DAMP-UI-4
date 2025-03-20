@@ -7,7 +7,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background-color: #24293e;
+    background-color: #8c95b9;
 }
 
 .container {
@@ -16,10 +16,17 @@ body {
     width: 100%;
 }
 
+.nav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
 .sidebar {
-    width: 20%;
+    width: 15%;
     background: #291e6d;
-    padding: 20px;
+    padding:10px;
 }
 
 .sidebar .logo {
@@ -34,6 +41,40 @@ body {
     
     padding: 0;
 }
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-menu li {
+    padding: 10px;
+    margin: 5px 0;
+    background: #8EBBFF;
+    cursor: pointer;
+    text-align: center;
+    transition: background 0.3s;
+    border: 1px solid black;
+}
+
+.sidebar-menu li a {
+    text-decoration: none;
+    color: #312c51;
+    display: block;
+}
+
+.sidebar-menu li:hover {
+    background: #a8b5ac;
+}
+
+/* Spacer untuk memberi jarak antara Pengumuman dan Setting */
+.spacer {
+    margin-top: 20px; 
+    background: transparent;
+    border: none;
+    pointer-events: none;
+}
+
 
 .sidebar ul li {
     padding: 10px;
@@ -54,6 +95,10 @@ body {
 .pengumuman {
     margin-top: 20px;
     font-weight: bold;
+}
+
+.spacer {
+    margin-top: 20px; 
 }
 
 .content {
